@@ -1,0 +1,241 @@
+:root{
+  --dkprpl : #090011;
+  --dkprpl2 : #0F001E;
+  --dkprpl3 : #080014;
+  --ltprpl : #F5EDFF;
+  --ltprpl2 : #C3BDCC;
+  --rgprpl : #6B5E7F;
+}
+
+*{
+  font-family: 'kollektif';
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+h1, h2, h3, h4{
+  font-weight: normal;
+}
+
+html{
+  background-color: var(--dkprpl);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--dkprpl3);
+  z-index: 2;
+  border-bottom: 2px solid var(--rgprpl);
+}
+
+#logobox{
+  display: flex;
+}
+
+#logo{
+  height: 50px;
+  justify-content: space-between;
+}
+
+header p{
+  font-weight: Bold;
+  color: var(--ltprpl);
+}
+
+nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav a{
+  font-family: "exo";
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto 20px auto 20px;
+  color: var(--ltprpl);
+  transition: .2s;
+}
+
+nav a.active{
+  color: var(--ltprpl2);
+}
+
+nav a:not(.active):hover{
+  transform: scale(1.05);
+  text-shadow:  0 0 5px white;
+}
+
+#navLine{
+  background-color: var(--ltprpl);
+  height: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+#bin{
+  display: block;
+  line-height: 15px;
+  letter-spacing: 10px;
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+}
+
+.anchor{
+  padding-top: 70px;
+  margin-top: -70px;;
+}
+
+#bin u{
+  font-family: "exo";
+  font-size: 15px;
+}
+
+.binDigit0{
+  color: #bdafce;
+}
+
+.binDigit1{
+  color: #ddcaf4;
+}
+
+.binary{
+  margin: 100px 0 50px 0;
+}
+
+#content{
+  padding: 0 150px 0 150px;
+  position: relative;
+}
+
+#content section{
+  margin: 50px 0 50px 0;
+  position: relative;
+}
+
+#content section h3{
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: rotate(-90deg);
+  font-family: "kollektif";
+  font-size: 30px;
+  font-weight: normal;
+}
+
+#content section p{
+  margin: 10px 0 10px 0;
+}
+
+#content section p{
+  font-family: "exo";
+  font-weight: normal;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.circle{
+  background-color: var(--dkprpl);
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  left: -100px;
+  top: 50%;
+  border: 5px solid var(--dkprpl);
+  outline: 5px solid var(--ltprpl);
+  transition: .4s;
+}
+
+.circle.active{
+  background-color: var(--ltprpl);
+}
+
+#sidebar{
+  background-color: var(--ltprpl);
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 0;
+  left: 68px;
+  border-radius:100px;
+  z-index: -1;
+}
+
+footer{
+  border-top: 2px solid var(--rgprpl);
+  background-color: var(--ltprpl2);
+  padding: 20px;
+}
+
+footer *{
+  color: var(--dkprpl);
+  font-size: 15px;
+}
+
+footer h1{
+  font-weight: bold;
+  font-size: 20px;
+}
+/*---FONTS---*/
+
+@font-face {
+  font-family: 'mypoppins';
+  font-weight: bold;
+  src: local('poppins'), url('./font/Poppins-Bold.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'mypoppins';
+  font-weight: bolder;
+  src: local('poppins'), url('./font/Poppins-ExtraBold.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'mypoppins';
+  font-weight: light;
+  src: local('poppins'), url('./font/Poppins-Light.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'mypoppins';
+  font-weight: normal;
+  src: local('poppins'), url('./font/Poppins-Regular.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'mypoppins';
+  font-weight: lighter;
+  src: local('poppins'), url('./font/Poppins-ExtraLight.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'exo';
+  font-weight: normal;
+  src: local('exo'), url('./font/Exo2-VariableFont_wght.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'kollektif';
+  font-weight: normal;
+  src: local('kollectif'), url('./font/Kollektif.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'kollektif';
+  font-weight: bold;
+  src: local('kollectif'), url('./font/Kollektif-Bold.ttf') format(truetype);
+}
